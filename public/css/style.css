@@ -875,7 +875,7 @@ border: 2px solid #fff;
 }
 #root{
 	background-image:url("https://media0.giphy.com/media/HnYmMm49Do6uk/source.gif");
-	background-size: auto;
+	background-size: 150%;
 }
 
 #nav{
