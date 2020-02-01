@@ -15,7 +15,7 @@ const NavTabs = (props) => {
                 <Collapse isOpen={!collapsed} navbar>
                     <Nav navbar>
                         <NavItem>
-                            <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+                            <Link to="/About" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
                                 Home</Link>
                         </NavItem>
                         <NavItem>
