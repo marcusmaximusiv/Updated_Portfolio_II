@@ -1,40 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-function NavTabs() {
+const NavTabs = (props) => {
+    const [collapsed, setCollapsed] = useState(true);
+
+    const toggleNavbar = () => setCollapsed(!collapsed);
+
     return (
-        <ul className="nav nav-tabs">
-            <li className="nav-item">
-                <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
-                    Home
+        <div id="nav">
+            <Navbar color="faded" light>
+                <NavbarBrand href="/" className="mr-auto"><img src="/yingyang-small.png" /></NavbarBrand>
+                <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+                <Collapse isOpen={!collapsed} navbar>
+                    <Nav navbar>
+                        <NavItem>
+                            <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>
+                                Home</Link>
+                        </NavItem>
+                        <NavItem>
+                            <Link
+                                to="/About"
+                                className={window.location.pathname === "/About" ? "nav-link active" : "nav-link"}>
+                                About</Link>
+                        </NavItem>
+                        <NavItem>
+
+                            <Link
+                                to="/Portfolio"
+                                className={window.location.pathname === "/Portfolio" ? "nav-link active" : "nav-link"}
+                            >
+                                Portfolio
                   </Link>
-            </li>
-            <li className="nav-item">
-                <Link
-                    to="/About"
-                    className={window.location.pathname === "/About" ? "nav-link active" : "nav-link"}
-                >
-                    About
+                        </NavItem>
+                        <NavItem>
+                            <Link
+                                to="/Contact"
+                                className={window.location.pathname === "/Contact" ? "nav-link active" : "nav-link"}
+                            >
+                                Contact Info
                   </Link>
-            </li>
-            <li className="nav-item">
-                <Link
-                    to="/Portfolio"
-                    className={window.location.pathname === "/Portfolio" ? "nav-link active" : "nav-link"}
-                >
-                    Search
-                  </Link>
-            </li>
-            <li className="nav-item">
-                <Link
-                    to="/Contact"
-                    className={window.location.pathname === "/Contact" ? "nav-link active" : "nav-link"}
-                >
-                    Contact Info
-                  </Link>
-            </li>
-        </ul>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
+            </Navbar >
+        </div>
     );
 }
+
 
 export default NavTabs;

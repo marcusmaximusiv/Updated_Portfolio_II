@@ -63,7 +63,7 @@ body {
 }
 h2{
 	font-size:34px;
-	color:white;
+	color:#222222;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
 	letter-spacing: -1px;
@@ -73,7 +73,7 @@ h2{
 }
 h3{
 	font-family: 'Montserrat', sans-serif;
-	color:white;
+	color:#222222;
 	font-size:16px;
 	margin:0 0 5px 0;
 	text-transform:uppercase;
@@ -81,7 +81,7 @@ h3{
 }
 h6{
 	font-size:16px;
-	color:white;
+	color:#888888;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:400;
 	text-align:center;
@@ -90,7 +90,6 @@ h6{
 p{
 	line-height:24px;
 	margin:0;
-	color:white;
 }
 
 /* Header Styles
@@ -146,7 +145,7 @@ color: #fff;
 
 .link{
 	padding:15px 35px;
-	background:red;
+	background:#7cc576;
 	color:#fff !important;
 	font-size:16px;
 	font-weight:400;
@@ -167,7 +166,7 @@ color: #fff;
 }
 
 .link:active, .link:focus {
-	background: red;
+	background: #7cc576;
 	text-decoration:none;
 	color:#fff !important;
 }
@@ -234,7 +233,7 @@ color: #fff;
 	font-style:normal;
 	font-size:38px;
 	display:block;
-	color:white;
+	color:#222;
 	font-family: 'FontAwesome';
 	line-height:38px;
 }
@@ -330,11 +329,11 @@ color: #fff;
 	padding:10px 22px;
 	font-size:12px;
 	line-height:20px;
-	color:black;
+	color:#222222;
 	border-radius:4px;
 	text-transform:uppercase;
 	font-family: 'Montserrat', sans-serif;
-	background:lightgrey;
+	background:#f7f7f7;
 	margin-bottom:5px;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
@@ -373,6 +372,7 @@ color: #fff;
 
 .Portfolio-nav li a.current{
 	background:red;
+	font-weight:boldd;
 	color:#fff;
 	text-decoration:none;
 }
@@ -439,7 +439,7 @@ img {
 	color:#ffffff;
 }
 .client li a span{
-	color:white;
+	color:#f1f1f1;
 }
 .quote-right{
 	font-style:normal;
@@ -633,7 +633,7 @@ border: 2px solid #fff;
 .contact-info-box h3 i{
 	font-style:normal;
 	font-size:18px;
-	color:white;
+	color:#222222;
 	font-family: 'FontAwesome';
 	font-weight:normal;
 	margin-right:7px;
@@ -642,7 +642,6 @@ border: 2px solid #fff;
 	line-height:28px;
 	display:block;
 	overflow:hidden;
-	color:white;
 }
 .social-link{
 	padding:35px 0;
@@ -720,7 +719,7 @@ border: 2px solid #fff;
 .input-btn{
 	width:175px;
 	height:50px;
-	background:red;
+	background:#7cc576;
 	border-radius:4px;
 	color:#ffffff;
 	font-size:14px;
@@ -870,20 +869,6 @@ border: 2px solid #fff;
 	animation-delay: 1.2s; 
 	-webkit-animation-delay: 1.2s; 
 }
-#nav{
-	background-color: transparent;
-}
-#root{
-	background-image:url("https://media0.giphy.com/media/HnYmMm49Do6uk/source.gif");
-	background-size: 150%;
-}
-
-#Portfolio{
-	background-color:black;
-}
-.portfolioContainer wow fadeInUp{
-	background-color:black;
-}
-#nav{
-	background-color:white;
+.background{
+	background-color:green;
 }

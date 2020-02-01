@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavTabs from "./components/NavTabs";
@@ -6,15 +6,15 @@ import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Portfolio from "./components/pages/Portfolio";
 import Contact from "./components/pages/Contact";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
 function App() {
   return (
     <Router>
       <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <NavTabs />
-        </nav>
+        <NavTabs />
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/portfolio" component={Portfolio} />
