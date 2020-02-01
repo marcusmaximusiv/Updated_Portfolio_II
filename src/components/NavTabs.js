@@ -10,7 +10,7 @@ const NavTabs = (props) => {
     return (
         <div id="nav">
             <Navbar color="faded" light>
-                <NavbarBrand href="/About" className="mr-auto"><img src="/yingyang-small.png" /></NavbarBrand>
+                <NavbarBrand href="/" className="mr-auto"><img src="/yingyang-small.png" /></NavbarBrand>
                 <NavbarToggler onClick={toggleNavbar} className="mr-2" />
                 <Collapse isOpen={!collapsed} navbar>
                     <Nav navbar>
